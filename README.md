@@ -1,4 +1,4 @@
-# BLUESPHERE Landing Page
+# TriEco Landing Page
 Responsive website developed for TriEco S.A., a Waste Management enterprise based in Argentina.
 
 Visit 
