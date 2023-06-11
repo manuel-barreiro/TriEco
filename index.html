@@ -30,10 +30,10 @@
                   </button>
                   <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav align-items-center">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        <a class="nav-link" href="#">¿Quiénes somos?</a>
-                        <a class="nav-link" href="#">Servicios</a>
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        <a class="nav-link scroll-link" href="#whoAreWe">¿Quiénes somos?</a>
+                        <a class="nav-link scroll-link" href="#servicios">Servicios</a>
+                        <a class="nav-link scroll-link" href="#contacto">Contacto</a>
                     </div>
                   </div>
                 </div>
@@ -61,7 +61,7 @@
                   <div class="carousel-caption text-end">
                     <h1 class="fw-bolder fs-1 mb-3">Somos <span class="color-primary">Trieco.</span></h1>
                     <h3 id="typeWriterHero" class="mb-4"></h3>
-                    <button type="button" class="btn btn-primary">Conocé más</button>
+                    <button type="button" onclick="window.location.href='#whoAreWe'" class="btn btn-primary scroll-link">Conocé más</button>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -76,71 +76,84 @@
         </section>
 
         <main>
-            <section id="quienesSomos" class="container-fluid d-flex justify-content-center align-items-center">
-                <div class="row justify-content-center align-items-center p-5">
-                    <div id="quienesSomosText" class="col-sm-12 col-lg-8 glass p-3">
-                        <h1 class="fw-bolder mb-3">¿Quiénes somos?</h1>
-                        <h4 id="typeWriterWhoAreWe" class="mb-3"></h4>
-                        <p>Nuestra historia y experiencia en el tratamiento de residuos nos han posicionado como <span class="fw-bold">líderes indiscutibles</span> en la industria. En Trieco S.A., nos dedicamos apasionadamente a proporcionar <span class="fw-bold">soluciones eficientes y sostenibles</span> para el tratamiento de residuos por incineración.</p>
-                        <p id="parrafoDesktop">En Trieco S.A., creemos en la importancia de establecer relaciones sólidas y duraderas con nuestros clientes. Trabajamos estrechamente con ellos para comprender sus necesidades específicas y ofrecer <span class="fw-bold">soluciones personalizadas</span> que satisfagan sus requisitos de gestión de residuos. Nuestro enfoque centrado en el cliente nos ha permitido establecer una sólida reputación y una cartera diversa de clientes satisfechos.</p>
-                        <p>Estamos orgullosos de nuestro <span class="fw-bold">compromiso</span> con la <span class="fw-bold">innovación constante</span> y la <span class="fw-bold">mejora continua</span>. Mantenemos una estrecha vigilancia sobre las tendencias y avances en la industria, lo que nos permite estar a la vanguardia de las mejores prácticas y adoptar tecnologías de vanguardia.</p>
-                    </div>
+          <section id="whoAreWe">
+            <div class="container my-5">
+              <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <img src="assets/logoTrieco.png" class="mb-3" alt="" width="150">
+                <h1 class="text-body-emphasis mb-3">¿Quiénes somos?</h1>
+                <h4 id="integral" class="mb-3">En Trieco nos dedicamos a la gestión integral de residuos.</h4>
+                <h4 id="typeWriterWhoAreWe" class="mb-3"></h4>
+                <p class="col-lg-8 mx-auto fs-5 text-muted mb-4">Proporcionamos <span class="fw-bold">soluciones eficientes y sostenibles</span> para el tratamiento de residuos por incineración.</p>
+                <p class="col-lg-8 mx-auto fs-5 text-muted mb-4">
+                  Nuestra historia y experiencia en el tratamiento de residuos nos han posicionado como <span class="fw-bold">líderes indiscutibles</span> en la industria.</p>
+                
+                <div class="d-inline-flex gap-2 mb-5">
+                  <button onclick="window.location.href='#servicios'" class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill scroll-link" type="button">
+                    Servicios
+                  </button>
+                  <button onclick="window.location.href='#contacto'" class="btn btn-outline-secondary btn-lg px-4 rounded-pill scroll-link" type="button">
+                    Contacto
+                  </button>
                 </div>
-            </section>
+              </div>
+            </div>
+          </section>
 
             <section id="servicios" class="container p-5">
 
-              <hr class="featurette-divider">
+              <h1 class="text-body-emphasis mb-5 text-center">Servicios que ofrecemos</h1>
+
+              <hr class="featurette-divider mb-5">
 
               <div class="row featurette">
                 <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
-                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Recolección</h2>
-                  <p class="lead text-end">Contamos con equipos especializados y personal calificado y capacitado específicamente para realizar la recolección de los distintos tipos de residuos de manera segura y eficiente.</p>
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold text-center">Recolección</h2>
+                  <p class="lead text-end text-center">Contamos con equipos especializados y personal calificado y capacitado específicamente para realizar la recolección de los distintos tipos de residuos de manera segura y eficiente.</p>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
+                  <img src="assets/bolsas.jpg" class="img-fluid servicePhoto" alt="">
                 </div>
               </div>
       
-              <hr class="featurette-divider">
+              <hr class="featurette-divider mt-5 mb-5">
       
               <div class="row featurette flex-row-reverse">
                 <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
-                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Transporte</span></h2>
-                  <p class="lead text-end">Utilizamos vehículos y equipos especialmente diseñados para el transporte seguro de cada tipo de residuo, cumpliendo con todas las normas y regulaciones tanto en el ámbito nacional como provincial.</p>
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold text-center">Transporte</span></h2>
+                  <p class="lead text-center">Utilizamos vehículos y equipos especialmente diseñados para el transporte seguro de cada tipo de residuo, cumpliendo con todas las normas y regulaciones tanto en el ámbito nacional como provincial.</p>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
+                  <img src="assets/camiones.jpg" class="img-fluid servicePhoto" alt="">
                 </div>
               </div>
       
-              <hr class="featurette-divider">
+              <hr class="featurette-divider mt-5 mb-5">
       
               <div class="row featurette">
                 <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
-                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Tratamiento y Disposición Final</span></h2>
-                  <p class="lead text-end">Nos aseguramos de disponerlos de manera final y segura cumpliendo todas las regulaciones aplicables para garantizar la protección del medio ambiente y la salud pública.</p>
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold text-center">Tratamiento y Disposición Final</span></h2>
+                  <p class="lead text-center">Nos aseguramos de disponerlos de manera final y segura cumpliendo todas las regulaciones aplicables para garantizar la protección del medio ambiente y la salud pública.</p>
                 </div>
                 <div class="col-md-5 d-flex justify-content-center align-items-center">
-                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
+                  <img src="assets/autoclave.jpg" class="img-fluid servicePhoto" alt="">
                 </div>
               </div>
       
-              <hr class="featurette-divider">
+              <hr class="featurette-divider mt-5">
                 
             </section>
 
             <section id="contacto" class="container p-5">
-              <div class="row justify-content-center mb-3">
+              <div class="row justify-content-center mb-5">
                 <div class="col-8 text-center">
                   <h1 class="fw-bolder">Contactanos</h1>
                   <h6>Contactate con nosotros para gestionar tus residuos responsablemente.</h6>
                 </div>
               </div>
 
-              <div class="row justify-content-evenly">
+              <div class="row justify-content-evenly g-5">
                 
-                <div class="col-5">
+                <div class="col-md-5">
                   <form action="" method="POST">
                     <div class="form-floating mb-3">
                       <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
@@ -164,13 +177,13 @@
                   </form>
                 </div>
 
-                <div class="col-5 d-flex flex-column justify-content-evenly align-items-center">
+                <div class="col-md-5 d-flex flex-column justify-content-evenly align-items-center">
 
                   <div id="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5763.283325748946!2d-58.32891942374008!3d-34.665290578575586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333a0abd47c0b%3A0x932c00b00f3180ef!2sStericycle!5e0!3m2!1ses!2sar!4v1686447915117!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
 
-                  <div>
+                  <div class="mt-5">
                     <p class="text-center"><i class="fa-solid fa-phone"></i> 11 6672-6968</p>
                     <p class="text-center"><i class="fa-solid fa-envelope"></i> trieco@trieco.com.ar</p>
                     <p class="text-center"><i class="fa-solid fa-location-dot"></i> Avellaneda, Buenos Aires</p>
@@ -193,9 +206,9 @@
           </a>
   
           <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">¿Quiénes somos?</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
+          <li class="nav-item"><a href="#hero" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="#whoAreWe" class="nav-link px-2 text-muted">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a href="#servicios" class="nav-link px-2 text-muted">Servicios</a></li>
           </ul>
         </footer>
         
@@ -210,7 +223,6 @@
 
         <!-- main.js -->
         <script src="js/main.js"></script>
-
         
     </body>
 

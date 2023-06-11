@@ -1,5 +1,8 @@
 body {
     overflow-x: hidden;
+    background-image: url('/assets/fondo1.jpg');
+    background-size: cover; /* Adjust the sizing of the image */
+    background-position: center; /* Adjust the position of the image */
 }
 
 .carousel-inner {
@@ -12,18 +15,7 @@ body {
     top: 30%;
 }
 
-
-#quienesSomos {
-    /* background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 11%, rgba(184,155,134,1) 100%); */
-    height: 100vh;
-    background-image: url('/assets/fondo1.jpg');
-    background-size: cover; /* Adjust the sizing of the image */
-    background-position: center; /* Adjust the position of the image */
-    
-}
-
-#quienesSomos p {
+#whoAreWe p {
     text-align: justify;
 }
 
@@ -49,6 +41,15 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+#integral {display: none;}
+
+.servicePhoto {
+    border-radius: 1rem;
+    -webkit-box-shadow: 8px 8px 26px 2px rgba(0,0,0,0.69);
+    -moz-box-shadow: 8px 8px 26px 2px rgba(0,0,0,0.69);
+    box-shadow: 8px 8px 26px 2px rgba(0,0,0,0.69);
 }
 
 /* MQS */
@@ -78,6 +79,10 @@ body {
         height: auto;
     }
 
+    #typeWriterWhoAreWe {
+        display: none;
+    }
+
     #quienesSomosText{
         padding: 1rem !important;
     }
@@ -85,6 +90,8 @@ body {
     #parrafoDesktop{
         display: none !important;
     }
+
+    #integral {display: block;}
   }
 
 
