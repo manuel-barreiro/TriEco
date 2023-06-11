@@ -88,65 +88,115 @@
                 </div>
             </section>
 
-            <section id="servicios" class="container">
+            <section id="servicios" class="container p-5">
 
-                <div id="recolección" class="row justify-content-start">
+              <hr class="featurette-divider">
 
-                    <div class="col-4">
-                        <h1>Recolección</h1>
-                        <p>Contamos con equipos especializados y personal calificado y capacitado específicamente para realizar la recolección de los distintos tipos de residuos de manera segura y eficiente.</p>
-                    </div>
-
+              <div class="row featurette">
+                <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Recolección</h2>
+                  <p class="lead text-end">Contamos con equipos especializados y personal calificado y capacitado específicamente para realizar la recolección de los distintos tipos de residuos de manera segura y eficiente.</p>
                 </div>
-
-                <div id="transporte" class="row justify-content-end">
-
-                    <div class="col-4">
-                        <h1>Transporte</h1>
-                        <p>Utilizamos vehículos y equipos especialmente diseñados para el transporte seguro de cada tipo de residuo, cumpliendo con todas las normas y regulaciones tanto en el ámbito nacional como provincial.</p>
-                    </div>
-
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
                 </div>
-
-                <div id="tratamiento" class="row justify-content-start">
-
-                    <div class="col-4">
-                        <h1>Tratamiento</h1>
-                        <p>Accedemos a tecnología de punta y personal altamente capacitado para llevar a cabo los procesos de tratamiento necesarios para cada tipo de residuo.</p>
-                    </div>
-
+              </div>
+      
+              <hr class="featurette-divider">
+      
+              <div class="row featurette flex-row-reverse">
+                <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Transporte</span></h2>
+                  <p class="lead text-end">Utilizamos vehículos y equipos especialmente diseñados para el transporte seguro de cada tipo de residuo, cumpliendo con todas las normas y regulaciones tanto en el ámbito nacional como provincial.</p>
                 </div>
-
-                <div id="dispFinal" class="row justify-content-end">
-
-                    <div class="col-4">
-                        <h1>Disposición Final</h1>
-                        <p>Nos aseguramos de disponerlos de manera final y segura cumpliendo todas las regulaciones aplicables para garantizar la protección del medio ambiente y la salud pública.</p>
-                    </div>
-
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
                 </div>
+              </div>
+      
+              <hr class="featurette-divider">
+      
+              <div class="row featurette">
+                <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="featurette-heading fw-normal lh-1 mb-3 fw-bold">Tratamiento y Disposición Final</span></h2>
+                  <p class="lead text-end">Nos aseguramos de disponerlos de manera final y segura cumpliendo todas las regulaciones aplicables para garantizar la protección del medio ambiente y la salud pública.</p>
+                </div>
+                <div class="col-md-5 d-flex justify-content-center align-items-center">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="300" height="300" xmlns="http://www.w3.org/2000/svg"><rect width="100%" height="100%" fill="#eee"/></svg>
+                </div>
+              </div>
+      
+              <hr class="featurette-divider">
                 
             </section>
 
-            <section id="contacto" class="container">
-              <div class="row justify-content-center">
+            <section id="contacto" class="container p-5">
+              <div class="row justify-content-center mb-3">
                 <div class="col-8 text-center">
                   <h1 class="fw-bolder">Contactanos</h1>
-                  <p>Contactate con nosotros para gestionar tus residuos de una manera integral y responsablemente.</p>
+                  <h6>Contactate con nosotros para gestionar tus residuos responsablemente.</h6>
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col"></div>
+              <div class="row justify-content-evenly">
+                
+                <div class="col-5">
+                  <form action="" method="POST">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+                      <label for="nombre" class="form-label text-start">Nombre</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                      <label for="email">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="tel" class="form-control" id="telefono" placeholder="Telefono" name="telefono">
+                      <label for="telefono">Teléfono</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 150px" name="mensaje"></textarea>
+                      <label for="mensaje">Mensaje</label>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary" type="button">Enviar</button>
+                    </div>
+                  </form>
+                </div>
+
+                <div class="col-5 d-flex flex-column justify-content-evenly align-items-center">
+
+                  <div id="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5763.283325748946!2d-58.32891942374008!3d-34.665290578575586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a333a0abd47c0b%3A0x932c00b00f3180ef!2sStericycle!5e0!3m2!1ses!2sar!4v1686447915117!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+
+                  <div>
+                    <p class="text-center"><i class="fa-solid fa-phone"></i> 11 6672-6968</p>
+                    <p class="text-center"><i class="fa-solid fa-envelope"></i> trieco@trieco.com.ar</p>
+                    <p class="text-center"><i class="fa-solid fa-location-dot"></i> Avellaneda, Buenos Aires</p>
+                  </div>
+                  
+                </div>
+
               </div>
 
-
             </section>
-        </main>
-
-        <footer>
 
             
+        </main>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top container">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2023 Trieco S.A.® </p>
+  
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <img src="assets/logoTrieco.png" alt="" width="100">
+          </a>
+  
+          <ul class="nav col-md-4 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Servicios</a></li>
+          </ul>
         </footer>
         
 
