@@ -10,7 +10,7 @@ let typeWriterHero = new Typewriter(app, {
  
 typeWriterHero
   .pauseFor(100)
-  .typeString('Líderes en tratamiento de residuos patogénicos y especiales.')
+  .typeString('Líderes en tratamiento de residuos peligrosos.')
   .pauseFor(2500)
   .deleteChars(10)
   .start();
@@ -26,7 +26,7 @@ typeWriterHero
    
   typeWriterWhoAreWe
     .pauseFor(100)
-    .typeString('En Trieco nos dedicamos a la gestión integral de residuos.')
+    .typeString('Nos dedicamos a la gestión integral de residuos peligrosos.')
     .pauseFor(2500)
     .deleteChars(10)
     .start(); 
